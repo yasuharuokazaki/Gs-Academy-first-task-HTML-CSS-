@@ -1,0 +1,139 @@
+@charset "utf-8";
+
+
+body{
+    width:1366px;
+    height: 5792px;
+    box-sizing: border-box;
+    font-family: 'Hiragino Kaku Gothic Pro'
+}
+
+/*Top*/
+#top{
+    width: inherit;
+    height: 500px;
+    border: solid 1px #EfEfEf;
+    text-align: center;
+    background-image: url(../images/header/hero_img.jpg);
+    background-size:cover;
+}
+
+#top_image{
+    object-fit: contain;
+}
+
+#top_title{
+    width:690px;
+    height:120px;
+   /* border:solid 2px blue;*/
+    margin-top:190px;
+    margin-bottom:190px;
+    margin-left: 325px;
+    margin-right:350px;
+}
+
+h1{
+    padding: 0;
+    font-size:48px;
+    font-weight: 600;
+    white-space: nowrap;
+    letter-spacing:0px;
+    text-align:left;
+    color: #ffffff;
+    height: 48px;
+    width: 666px;
+    margin-left:24px;
+    /*border:solid 2px black;*/
+}
+
+h1+p{
+    margin-top: 40px;
+    margin-left:0px;
+    font-size: 32px;
+    white-space: nowrap;
+    text-align: left;
+    height: 32px;
+    width: 600px;
+    color:#ffffff;
+   /* border:solid 2px black;*/  
+}
+
+header{
+    width:inherit;
+    height: 70px;
+    border:solid 1px #EfEfEf;
+}
+
+#logo{
+    width:200px;
+    height:42.11px;
+    margin-left:113px;
+    margin-top: 14px;
+}
+/*flex関連参照：https://www.sejuku.net/blog/56401*/
+
+.flex_box-test{
+ display:flex;
+ background-color: aqua;
+ padding:113px;
+    padding-bottom: 0;
+ align-items: stretch;
+ justify-contetnt:center;
+ flex-direction: row;
+    
+}
+
+flex_item{
+    padding:24px;
+}
+
+.flex_item img{
+    width:364px;
+    height: 243px;
+    padding:0;
+    margin: 0;
+    
+}
+
+.button{
+    text-align: center;
+       
+}
+.button button{
+    background-color: #FFE61D;
+    width: 264px;
+    height: 60px;
+    
+}
+
+/*table関連参照
+センター表示の方法→divで囲ってセンターと指示orHTMLに<table　align="center">と直接書き込む*/
+table{
+    table-layout: fixed;
+    align-self: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table th{
+    text-align: right;
+    padding-right: 10px;
+    font-weight: bold;
+    font-size: 16pt;
+    }
+
+table td{
+    text-align: left;
+    padding-left: 10px;
+    font-size: 16pt;
+}
+
+.others {
+    background-color: antiquewhite;
+    text-align: center;
+    
+}
+
+/*画面全体の基本設定*/
+
+/*画像を伸縮させるために必要*/
