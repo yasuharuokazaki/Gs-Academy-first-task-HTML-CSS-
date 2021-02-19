@@ -1,0 +1,278 @@
+@charset "utf-8"
+
+body{
+    width:600px;
+    height: auto;
+    box-sizing: border-box;
+}
+
+div{
+    width:200px;
+    height:auto;
+}
+
+#op{
+    width:600px;
+    text-align: center;
+    background-color: black;
+
+}
+
+#op>p{
+    writing-mode: vertical-rl;
+    color:white;
+    text-align:left;
+    margin:auto;
+    padding:5%;
+}
+
+.description{
+    width: 600px;
+    min-height:500px;
+    height: auto;
+    background-image: url(images/op.jpg);
+    background-size:cover;
+    background-position:center;
+    text-align: center;
+    display:table;
+    position: relative;
+}
+
+#description_text{
+    display:table-cell;
+    vertical-align:middle;
+    color:yellow;
+    padding:40px;
+    font-weight:bold;
+    font-size:1.3rem;
+    line-height: 3;
+    text-align: left;
+}
+
+#start{
+    position:absolute;
+    bottom:10%;
+    left:50%;
+    transform: translateX(-50%);
+    font-size:40px;
+}
+/* ゲーム内容に関するもの */
+
+#game_wrapper{
+    width:100%;
+    height:auto;
+    position:relative;
+}
+
+#map{
+    width:600px;
+    height: 500px;
+    background-image:url(images/china_map.jpg) ;
+}
+
+#chara{
+    width:100px;
+    height:20%;
+    margin:0 auto;
+    position:absolute;
+    top:59%;
+    left: 10%;
+    transform: translateX(-50%);
+    background-color:rgba(20,50,80, 50%)   
+}
+
+#talk{
+    width:500px;
+    height:auto;
+    margin:0 auto;
+    position:absolute;
+    top:500px;
+    left:300px;
+    transform: translateX(-50%);
+    background-color:rgba(20,50,80, 50%);
+    padding-left:10px;
+    
+}
+
+#talk_letter{
+    display:block;
+    max-width:450px;
+}
+
+#so,#cho,#kan{
+    width: 40px;
+    height:40px;
+    background-color:rgba(240, 18, 203, 0.5)
+}
+
+#so{
+    position: absolute;
+    top: 54%;
+    left: 292px;
+    width: 161px;
+    height: 135px;
+    background-color:rgba(16, 236, 16, 0.5)
+}
+
+#cho{
+    position: absolute;
+    top: 20%;
+    left: 250px;
+    width: 75px;
+    height: 84px;
+    background-color:rgba(80,100,80, 50%)
+}
+
+#kan{
+    position:absolute;
+    top:41%;
+    left:262px;
+    width: 40px;
+    height:40px;
+    background-color:rgba(175, 224, 28, 0.5)
+}
+
+
+#so_battle{
+        width:600px;
+        height:auto;
+        border:1px;
+        border-color: aliceblue;
+
+}
+
+#so_field{
+    width:600px;
+    height:auto;
+    background-color: black;
+    position:relative;
+    padding-left:90px;
+}
+
+#so_field img{
+    object-fit: contain;
+    display: none;
+}
+
+#anime1{
+    position:relative;
+    left:-90px;
+}
+
+
+/* 以下ゲーム用 */
+#mainGame{
+    width:600px;
+    display:none;
+}
+
+h1{
+    text-align: center;
+    font-size: 40px;
+}
+.game_wrapper{
+    width: 600px;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    top: 0;
+}
+
+.item{
+    text-align: left;
+    width:130px;
+}
+
+.box1{
+    width: 130px;
+    position: relative;
+    left: -15px;
+}
+.box2 p{
+    width: 130px;
+    font-size:70px;
+    margin-top:0px;
+    padding-top:10rem;
+    height:auto;
+    box-sizing:border-box;
+    letter-spacing:1rem;
+    color:red;
+    font-weight:bold;
+     
+ }
+
+ .box3 p{
+     color:red;
+     font-weight: bold;
+     text-align: center;
+
+ }
+
+ 
+ #enemy_img{
+     width:150px;
+     height:200px;
+ }
+
+ #my_img{
+    width: 150px;
+    height: 200px;
+}
+ 
+
+ .game_body{
+   position:relative;
+ }
+
+ .shout{
+    width: 600px;
+    font-size: 26px;
+    text-align: center;
+    position: relative;
+    top: 0px;
+    color: yellow;
+    font-weight: bold;
+    background-color:black;
+ }
+
+ button{
+     position: relative;
+     z-index: 10;
+ }
+
+ .hp{
+     margin-left:0px;
+     padding-top:20px;
+ }
+ .yhp{
+    display: block;
+    margin-left: 0px;
+    margin-top: 24px;
+    padding-top: 20px;
+}
+ .game_body{
+     padding-left:0;
+ }
+
+ .reset{
+     position:relative;
+     top:83%;
+     font-size:30px;
+     left:0%;
+     right:0%;
+     margin:0 auto;
+ }
+ 
+ #final_result{
+    position: absolute;
+    top: 28%;
+    left: 0;
+    font-size: 6rem;
+    width: 600px;
+    font-weight: bold;
+ }
+
+ #mainGame{
+     position:relative;
+    top:-440px;
+ }

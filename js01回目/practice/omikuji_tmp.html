@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery/jquery-1.9.0.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+<main>
+ <ul>
+     <li id="omikuji">Draw a omikuji!</li>
+ </ul>
+<p id="echo"></p>
+
+</main>
+
+
+    <script>
+     $("#omikuji").on("click",function(){
+         alert("ok");
+        //  1 乱数を作成する
+         const r = Math.ceil(Math.random()*5);
+        // 2　ifで分岐処理する
+        let veiw="";
+        if(r==1){
+          view = '<img src="何かしらの画像 width="300">';
+        }
+
+        if(r==2){
+          view = "中吉"
+        }
+
+        if(r==3){
+          view = "小吉"
+        }
+
+        if(r==4){
+          view = "吉"
+        }
+
+        if(r==5){
+          view = "凶"
+        }
+
+        // 3　表示処理
+        $("#echo").html(view);
+     })
+    </script>
+    
+</body>
+</html>

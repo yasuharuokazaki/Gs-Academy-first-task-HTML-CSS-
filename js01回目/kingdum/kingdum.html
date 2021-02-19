@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="kingstyle.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <!-- op  -->
+ <div id="op">
+    <p id="op_text1">
+        &emsp;紀元前５世期末&emsp;それまで権力をふるっていた周が弱体化すると、
+    中国各地で下克上が進んだ。<br>
+    <br>
+        &emsp;その結果、中国大陸は有力な七国(戦国の七雄)に分割され、
+        俗にいう春秋時代へと突入する。
+    </p> 
+
+    <p id="op_text2">
+        &emsp;戦国の七雄は、各地で覇権を争い終わりの見えない戦争を繰り返していた。<br>
+        <br>  
+        &emsp;そんな中、いまだ一度も統一されたことのない中国大陸の統一を目指し、動き出した国があった。<br>
+    <br>
+    &emsp;それが「秦」である。
+    </p>
+  </div>
+ <!-- description  -->
+  <div id="description_wrapper" class="description">
+    <p id="description_text">
+        あなたは、秦の大将軍です。<br>
+         そのジャンケンの実力を発揮し、天下統一をはたしてください。
+    </p>
+    <button id="start">開戦</button>
+  </div>
+ 
+<main>
+  <!-- game main -->
+    <section id="game_wrapper">
+        <div id="field" style="width: 600px; height: 500px;">
+            <!-- 地図の書き込み -->
+            <img  src="images/china_map.jpg" alt="春秋戦国時代の地図" style="width: 600px; height:500px;" id="map">
+        </div>
+        <div id="chara">
+            <!-- キャラのイメージ -->
+        </div>
+        <div id="talk">
+            <!-- ここに各種セリフを表示 -->
+        </div>
+        <div id="so">
+            <!-- 楚 -->
+        </div>
+        <div id="cho">
+            <!-- 趙 -->
+        </div>
+        <div id="kan">
+            <!-- 韓 -->
+        </div>
+    </section>   
+
+    <!-- 各国戦場アニメーション -->
+    <section id="so_battle">
+        <div id="so_field">
+            <img id="anime1" src="images/so_field.PNG" alt="" >
+            <img id="anime2" src="images/mannu1.PNG" alt="">
+            <img id="anime3" src="images/mannu.PNG" alt="">
+        </div>
+    </section>
+
+    <!-- 以下じゃんけんゲーム -->
+
+    <section id="mainGame">
+        <div class="game_wrapper">
+            <!-- 自分画面 -->
+            <div class="item box1">
+                <p>自分</p>
+                <div>
+                    <img src="images/guu.png" alt="自分の手" id="my_img">
+                </div>
+                <div class="game_body">
+                    <button class="role_button" id="my_guu" onclick="guu_display();selectRole_guu()">グー！</button>
+                    <button class="role_button" id="my_choki" onclick="choki_display();selectRole_choki()">チョキ！</button>
+                    <button class="role_button" id="my_paa" onclick="paa_display();selectRole_paa()">パー！</button>
+                </div>
+                <progress max="100" value="100" class="hp"></progress>       
+            </div>
+
+            <div class="item box2">
+                <p>VS</p>
+            </div>
+            <!-- 相手の状況 -->
+            <div class="item box3">
+            
+                <p>↓クリック</p> 
+                <div>
+                    <img id="enemy_img" src="images/mannu.PNG" alt="相手の手" id="enemy_img">
+                </div>
+                <progress max="100" value="100" class="yhp"></progress> 
+                
+            </div>     
+
+            
+        </div>
+        <!-- 最終勝敗表示 -->
+        <div> 
+            <P class="shout">相手をクリックすると、ゲーム開始！<br>
+            掛け声に合わせて出したい手(ボタン)をクリック！</P>
+        </div>
+
+        <button class="reset" onclick=HTMLRestore()>リセット</button> 
+        <div id="final_result">
+            <!-- 結果表示 -->
+        </div>
+    </section>
+</main>
+
+
+<script src="king.js"></script>
+<script src="game.js"></script>
+<script>
+//     // はじまるまでのアニメーション
+ 
+// 以下じゃんけんゲームスクリプト
+
+
+// $("#field").html('<img src="images/china_map.jpg" alt="春秋戦国時代の地図" style="width: 100%; height:500px;">') ;
+//    $("#op_text2").fadeIn(6000);
+//    $("#op_text2").fadeOut(9000);
+// セレクタの入れ子＝＞("セレクタx,セレクタy")
+// メソッドの入れ子
+// $('.sample').on({
+//   'click': function(){...},
+//   'dblclick': function(){...}
+// });
+
+</script>
+
+</body>
+</html>
